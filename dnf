@@ -732,6 +732,16 @@ Swap:          8.0G        1.0G        7.0G
 [root@localhost ~]# 
 
 
+
+#############################
+#instalar codecs no fedora 
+sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y gstreamer1-{ffmpeg,libav,plugins-{good,ugly,bad{,-free,-nonfree}}} --setopt=strict=0 xine-lib* k3b-extras-freeworld gstreamer1-{plugin-crystalhd,ffmpeg,plugins-{good,ugly,bad{,-free,-nonfree,-freeworld,-extras}{,-extras}}} libmpg123 lame-libs --setopt=strict=0 dnf install vlc AtomicParsley.i686 flac.i686 freeimage.i686 jorbis.noarch libdv.i686 libfc14audiodecoder.i686 libfc14audiodecoder-devel.i686 nxtvepg.i686 crystalhd-firmware.noarch gstreamer-plugin-crystalhd.i686 mingw32-flac.noarch perl-MIME-Base32.noarch gstreamer-plugins-bad gstreamer-plugins-ugly gstreamer-ffmpeg gstreamer-plugins-bad-free-extras.i686 gstreamer-plugins-bad-free.i686 gstreamer-plugins-bad-free-devel.i686 gstreamer-plugins-bad-free-devel-docs.i686 gstreamer1-plugins-bad-free-extras.i686 mingw32-gstreamer-plugins-bad-free.noarch mingw64-gstreamer-plugins-bad-free.noarch libmad vlc mozilla-vlc gstreamer-plugins-bad gstreamer-plugins-bad-free-extras gstreamer-plugins-bad-nonfree gstreamer-plugins-ugly gstreamer-ffmpeg gstreamer1-libav gstreamer1-plugins-bad-free-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-base-tools updates gstreamer1-plugins-good-extras gstreamer1-plugins-ugly gstreamer1-plugins-bad-free gstreamer1-plugins-good gstreamer1-plugins-base gstreamer1 xmms-mp3  k3b-extras-freeworld 
+
+
+
+
 ####################################################################################
 #desabilitar o kde wallet
 ####################################################################################
